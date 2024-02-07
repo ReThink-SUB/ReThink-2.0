@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@700&family=Karma:wght@600&display=swap');
+
+.navContainer, .logo {
+  width: '100%';
+  height: '100%';
+  position: 'relative';
+}
+
+.navbar {
+    width: 718;
+    height: 62;
+    left: 0;
+    top: 0;
+    position: 'absolute';
+    background: '#F7A325'
+    borderRadius: 30;
+}
+
+.homeButton, .aboutButton, .contactButton, .criteriaButton, .promoteButton {
+    top: 20;
+    position: 'absolute';
+    color: '#3B2B23';
+    fontSize: 16;
+    fontFamily: 'Averia Sans Libre';
+    fontWeight: '700';
+    lineHeight: 22.37;
+    letterSpacing: 0.48;
+    wordWrap: 'break-word';
+}
+
+.homeButton {
+    left: 65;
+}
+
+.aboutButton {
+    left: 154;
+}
+
+.contactButton {
+    left: 572;
+    top: 20;
+    textDecoration: 'underline';
+}
+
+.criteriaButton {
+    left: 246;
+}
+
+.promoteButton {
+    left: 350;
+}
+
