@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@700&family=Karma:wght@600&display=swap');
+
+/* Line styling. 
+Includes container, left and right line aligning positioning, and color/positioning for indiivudal lines.*/
+
+.line-container{
+  width: 100%; 
+  height: 100%; 
+  position: relative;
+}
+
+.leftline {
+  width: 10%; 
+  height: 0px; 
+  left: 0px;
+
+  position: absolute;
+}
+
+.rightline {
+  width: 100%;
+  height: 0px; 
+  right: 0px;
+
+  position: absolute;
+}
+
+.top{
+  top: 0px; 
+  border: 1px #728F6E solid
+}
+
+.mid {
+  top: 17px; 
+  border: 1px #F7A325 solid
+}
+
+.bot {
+  top: 29.75px; 
+  border: 1px #F56038 solid
+}
+
+
+/* Text styling.
+Overall text positioning and width (for calculations), plus individual title and subtitle styles. */
+
+.text {
+  position: relative;
+  top: -12px;
+  width: fit-content;
+  left: 11%
+}
+
+.title {
+  color: #3B2B23;
+  font-size: 32px;
+  font-family: Averia Sans Libre;
+  font-weight: 700;
+  line-height: 44.75px;
+  letter-spacing: 0.96px;
+  word-wrap: break-word
+}
+
+.subtitle {
+  color: #728F6E;
+  font-size: 24px;
+  font-family: Karma;
+  font-weight: 600;
+  word-wrap: break-word;
+
+  max-width: 50% 
+}
