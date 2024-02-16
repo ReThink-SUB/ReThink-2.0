@@ -1,30 +1,36 @@
 import React from 'react';
-import RethinkLogo from 'rethinkLogo.png';
+import { Navbar, Nav } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import routes from '../../constants/routes.js';
+import RethinkLogo from './rethinkLogo.png';
 import './styles.css';
 
-/**
- *
- * Website header component. Title and subtitle text are passed in as props.
- * Has Rethink logo button on the right and navbar on the left
- */
 export default function Header() {
   return (
-    <section className="header">
-      <section className="logo">
-        <img
-          className="logo"
-          src={RethinkLogo}
-          alt="The word ReThink with petals next to it"
-        />
-      </section>
-      <section className="navContainer">
-        <div className="navbar" />
-        <div className="homeButton">home</div>
-        <div className="aboutButton">about </div>
-        <div className="contactButton">contact us</div>
-        <div className="criteriaButton">criteria</div>
-        <div className="promoteButton">promote your business</div>
-      </section>
-    </section>
+    <Navbar expand="lg" className="header container justify-content-between">
+      <div className="navbar row">
+        <section className="logo col-md-6">
+          <img
+            className="logo"
+            src={RethinkLogo}
+            alt="The word ReThink with petals next to it"
+          />
+        </section>
+        <section className="navContainer col-md-6">
+          <Nav>
+            {routes.map((route, index) => (
+              <Nav.Link
+                key={index}
+                as={Link}
+                to={route.path}
+                className={`navLink ${route.path.substring(1)}Button`}
+              >
+                {route.path === '/' ? 'home' : route.path.substring(1)}
+              </Nav.Link>
+            ))}
+          </Nav>
+        </section>
+      </div>
+    </Navbar>
   );
 }

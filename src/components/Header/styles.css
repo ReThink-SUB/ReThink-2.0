@@ -1,53 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@700&family=Karma:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karma:wght@600&display=swap');
 
-.navContainer, .logo {
-  width: '100%';
-  height: '100%';
-  position: 'relative';
+.navContainer,
+.logo {
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
 .navbar {
-    width: 718;
-    height: 62;
-    left: 0;
-    top: 0;
-    position: 'absolute';
-    background: '#F7A325'
-    borderRadius: 30;
+  width: 718px;
+  height: 62px;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background: #f7a325;
+  border-radius: 30px;
 }
 
-.homeButton, .aboutButton, .contactButton, .criteriaButton, .promoteButton {
-    top: 20;
-    position: 'absolute';
-    color: '#3B2B23';
-    fontSize: 16;
-    fontFamily: 'Averia Sans Libre';
-    fontWeight: '700';
-    lineHeight: 22.37;
-    letterSpacing: 0.48;
-    wordWrap: 'break-word';
+.navLink {
+  top: 20px;
+  position: absolute;
+  color: #3b2b23;
+  font-size: 16px;
+  font-family: 'Averia Sans Libre', sans-serif;
+  font-weight: 700;
+  line-height: 22.37px;
+  letter-spacing: 0.48px;
+  word-wrap: break-word;
 }
 
+/* Define styles for different buttons */
 .homeButton {
-    left: 65;
+  left: 65px;
 }
 
 .aboutButton {
-    left: 154;
+  left: 154px;
 }
 
 .contactButton {
-    left: 572;
-    top: 20;
-    textDecoration: 'underline';
+  left: 572px;
+  top: 20px;
+  text-decoration: underline;
 }
 
 .criteriaButton {
-    left: 246;
+  left: 246px;
 }
 
 .promoteButton {
-    left: 350;
+  left: 350px;
 }
-
