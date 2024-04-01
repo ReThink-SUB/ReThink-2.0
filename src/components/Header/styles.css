@@ -1,28 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@700&family=Karma:wght@600&display=swap');
 
 .logo {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 90px;
+  margin-right: 5vw;
 }
 
 img,
 .navContainer {
-  height: 62px;
-  margin-top: 65px;
-  margin-left: 90px;
+  height: 4vw;
+  margin-top: 5vw;
+  margin-left: 5vw;
 }
 
 .navContainer {
   display: inline-block;
   vertical-align: middle;
-  width: 610px;
-  right: 30px;
+  width: clamp(300px, 60%, 800px);
+  right: 3vw;
   background: #f7a325;
   position: absolute;
-  border-radius: 30px;
-  margin-right: 90px;
+  border-radius: 3vw;
+  margin-right: 5vw;
 }
 
 .nav {
@@ -38,11 +37,11 @@ img,
 
 .nav-link button {
   color: #3b2b23;
-  font-size: 16px;
+  font-size: clamp(14px, 2vw, 20px);
   font-family: 'Averia Sans Libre';
   font-weight: 700;
-  line-height: 22.37px;
-  letter-spacing: 0.48px;
+  line-height: clamp(20px, 4vw, 28px);
+  letter-spacing: clamp(0.3px, 0.1vw, 0.5px);
   word-wrap: break-word;
   text-decoration: none;
   border: none;
