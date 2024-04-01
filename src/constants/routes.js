@@ -7,9 +7,9 @@ import Promote from '../pages/promote';
 const routes = [
   { path: '/', component: Home, exact: true },
   { path: '/about', component: About },
-  { path: '/contact', component: Contact },
   { path: '/criteria', component: Criteria },
-  { path: '/promote', component: Promote },
+  { path: '/promote your business', component: Promote },
+  { path: '/contact us', component: Contact },
 ];
 
 export default routes;
