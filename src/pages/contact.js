@@ -1,10 +1,12 @@
 import React from 'react';
+import SectionHeader from '../components/SectionHeader/SectionHeader';
 
 function ContactUsPage() {
   return (
-    <div>
-      <h1>Contact Us</h1>
+    <div style={{ marginTop: '80px' }}>
+      <SectionHeader title="Contact Us" subtitle="We'd like to talk to you too! We'll be in touch soon." />
     </div>
+
   );
 }
 
