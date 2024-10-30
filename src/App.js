@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header/Header.js';
+import Footer from './components/Footer/Footer.js';
 import ContactUsPage from './pages/contact.js'
 import CriteriaPage from './pages/criteria';
 import PromotePage from './pages/promote';
@@ -19,6 +20,7 @@ function App() {
           <Route path={'/promote-your-business'} element={<PromotePage/>}/>
           <Route path={'/contact-us'} element={<ContactUsPage/>}/>
         </Routes>
+      <Footer/>
     </Router>
   );
 }
