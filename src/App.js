@@ -12,17 +12,22 @@ import AboutPage from './pages/about';
 function App() {
   return (
     <Router>
-      <Header/>
-        <Routes>
-          <Route path={'/'} element={<HomePage/>}/>
-          <Route path={'/about'} element={<AboutPage/>}/>
-          <Route path={'/criteria'} element={<CriteriaPage/>}/>
-          <Route path={'/promote-your-business'} element={<PromotePage/>}/>
-          <Route path={'/contact-us'} element={<ContactUsPage/>}/>
-        </Routes>
-      <Footer/>
+      <div className="app-container">
+          <Header />
+          <div className="content">
+              <Routes>
+                  <Route path="/" element={<HomePage />} />
+                  <Route path="/about" element={<AboutPage />} />
+                  <Route path="/criteria" element={<CriteriaPage />} />
+                  <Route path="/promote-your-business" element={<PromotePage />} />
+                  <Route path="/contact-us" element={<ContactUsPage />} />
+              </Routes>
+          </div>
+          <Footer />
+      </div>
     </Router>
   );
 }
+
 
 export default App;
