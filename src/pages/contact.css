@@ -1,0 +1,7 @@
+.contact-box {
+    background-color: #E9F3E7;
+    padding: 20px;
+    margin: 10vh;
+    height: calc(120vh - 160px);
+    overflow: auto;
+}
