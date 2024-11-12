@@ -10,10 +10,16 @@ function ContactUsPage() {
       </div>
       <div className="contact-box">
         <div className="box-left">
-          <p className="title">Let's Chat</p> 
+          <p className="title">Let's Chat</p>
         </div>
         <div className="box-right">
-          {/*image*/}
+          <form>
+            <input type="text" id="name" name="name" placeholder="Name" />
+            <input type="text" id="subject" name="subject" placeholder="Subject" />
+            <input type="email" id="email" name="email" placeholder="Email" />
+            <textarea id="message" name="message" placeholder="Message"></textarea>
+            <button type="submit">Submit</button>
+          </form>
         </div>
       </div>
     </>
