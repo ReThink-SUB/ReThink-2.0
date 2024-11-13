@@ -1,5 +1,5 @@
 import React from 'react';
-import TeamPhoto from '../../images/TeamPhoto.png';
+import TeamPhoto from '../../images/aboutUs/TeamPhoto.png';
 import SectionHeader from '../../components/SectionHeader/SectionHeader';
 import './styles.css';
 
@@ -11,7 +11,7 @@ function AboutPage() {
       </div>
 
       <div className="who-we-are-container">
-        <img src={TeamPhoto} alt="Team Photo" className="team-photo" />
+        <img src={TeamPhoto} alt="A group of students from ReThink" className="team-photo" />
         
         <div className="who-we-are-text">
           <p>
