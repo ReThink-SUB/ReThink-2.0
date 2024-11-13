@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Karma:wght@600&display=swap');
+
+.about-page {
+  margin-top: 80px;
+  text-align: center;
+}
+  
+.who-we-are-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin-top: 40px;
+}
+
+.team-photo {
+  width: 700px;
+  height: calc(700px * 3 / 4);
+  object-fit: cover;
+  margin: 0;
+}
+
+.who-we-are-text {
+  font-family: 'Karma', sans-serif;
+  max-width: 400px;
+  font-size: 20px;
+  line-height: 24.7px;
+}

@@ -1,5 +1,5 @@
 import Home from '../pages/home';
-import About from '../pages/about';
+import About from '../pages/About/about';
 import Contact from '../pages/contact';
 import Criteria from '../pages/criteria';
 import Promote from '../pages/promote';

@@ -6,7 +6,7 @@ import ContactUsPage from './pages/contact.js'
 import CriteriaPage from './pages/criteria';
 import PromotePage from './pages/promote';
 import HomePage from './pages/home';
-import AboutPage from './pages/about';
+import AboutPage from './pages/About/about';
 
 function App() {
   return (
