@@ -1,0 +1,54 @@
+
+.contact-box {
+  background-color: #E9F3E7;
+  padding: 20px;
+  margin: 10vh;
+  height: calc(120vh - 160px);
+  display: flex;
+  overflow: auto;
+}
+
+.box-left,
+.box-right {
+  flex: 1;
+}
+
+.box-left {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 20px;
+}
+
+.title {
+  color: #3B2B23;
+  font-size: 32px;
+  font-family: 'Averia Sans Libre', sans-serif;
+  font-weight: 700;
+  line-height: 1.4; /* Adjust line height as needed */
+}
+
+.box-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.box-right input,
+.box-right textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px; 
+  font-family: 'Averia Sans Libre', sans-serif;
+}
+
+.box-right button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer;
+  font-family: 'Averia Sans Libre', sans-serif;
+  font-weight: bold;
+}
