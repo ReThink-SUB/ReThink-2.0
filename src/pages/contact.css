@@ -1,23 +1,19 @@
-
 .contact-box {
   background-color: #E9F3E7;
-  padding: 20px;
+  padding: 0;
   margin: 10vh;
   height: calc(120vh - 160px);
   display: flex;
-  overflow: auto;
-}
-
-.box-left,
-.box-right {
-  flex: 1;
+  overflow: hidden;
 }
 
 .box-left {
+  flex: 1;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding-top: 20px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
 }
 
 .title {
@@ -25,30 +21,67 @@
   font-size: 32px;
   font-family: 'Averia Sans Libre', sans-serif;
   font-weight: 700;
-  line-height: 1.4; /* Adjust line height as needed */
+  line-height: 1.4;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  margin: 25px 0 20px 0;
+  text-align: center;
 }
 
-.box-right form {
+.box-right {
+  flex: 1;
+  background-image: url('../images/contact-us-photo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  width: 100%;
+  max-width: 500px;
+  gap: 10px; 
 }
 
-.box-right input,
-.box-right textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px; 
+form label {
   font-family: 'Averia Sans Libre', sans-serif;
+  color: #3B2B23;
 }
 
-.box-right button {
-  padding: 10px 20px;
-  background-color: #4CAF50;
+form input,
+form textarea {
+  padding: 10px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  resize: none; /* Disables resizing of the textarea */
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: transparent;
+}
+
+form button {
+  padding: 5px 50px;
+  background-color: #F56038;
   color: white;
   border: none;
-  border-radius: 5px; 
+  border-radius: 25px; /* Makes the button almost oval */
   cursor: pointer;
   font-family: 'Averia Sans Libre', sans-serif;
   font-weight: bold;
+  font-size: 18px;
+  align-self: flex-end; /* Right-aligns the button */
+  margin: 15px 0 20px 0;
+  resize: none; 
+}
+
+form textarea {
+  height: 120px; 
+  resize: none; 
 }
