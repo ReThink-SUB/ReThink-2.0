@@ -28,7 +28,6 @@ function ContactUsPage() {
           </form>
         </div>
         <div className="box-right">
-          {/* Placeholder for additional content if needed */}
         </div>
       </div>
     </>
