@@ -146,6 +146,39 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .join-text {
+    font-size: 20px;
+    margin: 50px;
+  }
+  
+  .green-box {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .rethink-promote-business-image {
+    max-width: 90%;
+    height: auto;
+    padding-bottom: 25px;
+  }
+
+  .reason-box-circle {
+    width: 30px;
+    height: 30px;
+  }
+
+  .reason-box-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .reason-box {
+    padding: 15px;
+  }
+}
+
 @media (max-width: 900px) {
   .bottom-row {
     flex-direction: column;
@@ -208,6 +241,16 @@
   .green-box {
     padding-left: 100px;
     padding-right: 100px;
+    padding-top: 0px;
+  }
+
+  .join-heading {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .join-text {
+    font-size: 19px;
   }
 }
 
@@ -239,5 +282,82 @@
   .green-box {
     padding-left: 50px;
     padding-right: 50px;
+  }
+
+  .rethink-logo {
+    max-width: 30%;
+    height: auto;
+  }
+}
+
+@media (max-width: 500px) { 
+  .green-box {
+    margin: 50px;
+    background-color: #E9F3E7;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 50px;
+    padding-top: 0px;
+  }
+
+  .rethink-logo {
+    max-width: 40%;
+    height: auto;
+  }
+
+  .rethink-promote-business-image {
+    max-width: 90%;
+  }
+
+  .join-text {
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .join-heading {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .reason-box-heading {
+    font-size: 15px;
+    line-height: 90%;
+  }
+
+  .reason-box-description {
+    font-size: 15px;
+    line-height: 110%;
+  }
+
+  .reason-box {
+    border-radius: 25px;
+    border: 5px solid #728F6E;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .join-heading {
+    font-size: 18px;
+  }
+
+  .reason-box-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-family: 'Averia Sans Libre';
+  }
+
+  .reason-box-number {
+    margin: 0; 
+    font-size: 18px;
+  }
+
+  .reason-box-row {
+    gap: 5px;
+  }
+
+  .reason-box-column {
+    gap: 15px;
   }
 }
