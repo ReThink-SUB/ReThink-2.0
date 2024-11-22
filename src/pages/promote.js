@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/promote.css';
 import RethinkLogoNoBackground from '../images/RethinkLogo-no-background.png'
-import RethinkPromoteBusinessImage from '../images/rethink-promote-business-image.png'
+import RethinkPromoteBusinessImage from '../images/promote-business/rethink-promote-business-image.png'
 import '../components/SectionHeader/SectionHeader';
 import SectionHeader from '../components/SectionHeader/SectionHeader';
 
