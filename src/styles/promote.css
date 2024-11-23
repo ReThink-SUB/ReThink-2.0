@@ -1,0 +1,363 @@
+.promote-page-container {
+  background-color: #FFFFF7;
+  margin-top: 30px;
+  padding-top: 100px;
+}
+
+.promote-page-header {
+  font-family: 'Averia Sans Libre';
+  margin-left: 300px;
+}
+
+.promote-page-subheader {
+  font-family: 'Karma';
+  color: #728F6E;
+  margin-left: 300px;
+}
+
+.green-box {
+  margin: 100px;
+  background-color: #E9F3E7;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 75px;
+  padding-top: 25px;
+}
+
+.join-heading {
+  font-size: 30px;
+  font-family: "Averia Sans Libre";
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.reason-col {
+  display: flex;
+  flex-direction: column;
+  flex: 4.5;
+}
+
+.join-col {
+  display: flex;
+  flex: 9;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.reason-box {
+  border-radius: 25px;
+  border: 5px solid #728F6E;
+  padding: 25px;
+  background-color: #FFFFF7;
+  margin-bottom: 20px;
+}
+
+.reason-box-row {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.reason-box-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #F56038;
+  color: white;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 1.2em;
+  font-family: 'Averia Sans Libre';
+}
+
+.reason-box-number {
+  margin: 0;
+  padding: 20px;
+  font-size: 22px;
+}
+
+.reason-box-heading {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Averia Sans Libre";
+  margin: 0px;
+  padding: 0px;
+  line-height: 95%;
+}
+
+.reason-box-description {
+  font-size: 16px;
+  font-family: "Karma";
+  margin: 0px;
+  padding: 0px;
+  line-height: 120%;
+}
+
+.bottom-row {
+  display: flex;
+  flex-direction: row;
+  gap: 125px;
+}
+
+.reason-box-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.join-text {
+  font-size: 22px;
+  text-align: center;
+  font-family: "Karma";
+  margin-left: 85px;
+  margin-right: 85px;
+  margin-top: 0px;
+  line-height: 130%;
+}
+
+.rethink-promote-business-image {
+  max-width: 75%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.sign-up-button {
+  margin: 0 auto;
+}
+
+.sign-up-button button {
+  background-color: #F56038;
+  border-radius: 17px; 
+  color: white;    
+  padding: 5px 35px;  
+  border: none;    
+  cursor: pointer;   
+  font-size: 12px; 
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+@media (max-width: 1400px) {
+  .join-heading {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .join-text {
+    font-size: 20px;
+    margin: 50px;
+  }
+  
+  .green-box {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .rethink-promote-business-image {
+    max-width: 90%;
+    height: auto;
+    padding-bottom: 25px;
+  }
+
+  .reason-box-circle {
+    width: 30px;
+    height: 30px;
+  }
+
+  .reason-box-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .reason-box {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 900px) {
+  .bottom-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .join-col {
+    order: 2;
+    margin-top: 0px;
+    align-items: center;
+    padding: 0;
+  }
+
+  .reason-col {
+    order: 1;
+    margin-bottom: 0px;
+    padding: 0;
+  }
+
+  .join-text {
+    margin: 0 20px;
+    padding: 0;
+  }
+
+  .sign-up-button {
+    margin: 0 auto;
+  }
+
+  .reason-box {
+    margin-bottom: 10px;
+  }
+}
+
+
+@media (max-width: 800px) { 
+  .reason-box-row {
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 10px; 
+  }
+
+  .reason-box-circle {
+    order: 1; 
+    margin-bottom: 10px;
+  }
+
+  .reason-box-column {
+    order: 2;
+    padding-left: 0px;
+  }
+
+  .reason-box-heading {
+    line-height: 110%;
+  }
+
+  .reason-box-description {
+    line-height: 120%;
+  }
+
+  .green-box {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 0px;
+  }
+
+  .join-heading {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .join-text {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 600px) { 
+  .reason-box-row {
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 10px; 
+  }
+
+  .reason-box-circle {
+    order: 1; 
+    margin-bottom: 10px;
+  }
+
+  .reason-box-column {
+    order: 2;
+    padding-left: 0px;
+  }
+
+  .reason-box-heading {
+    line-height: 110%;
+  }
+
+  .reason-box-description {
+    line-height: 120%;
+  }
+
+  .green-box {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .rethink-logo {
+    max-width: 30%;
+    height: auto;
+  }
+}
+
+@media (max-width: 500px) { 
+  .green-box {
+    margin: 50px;
+    background-color: #E9F3E7;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 50px;
+    padding-top: 0px;
+  }
+
+  .rethink-logo {
+    max-width: 40%;
+    height: auto;
+  }
+
+  .rethink-promote-business-image {
+    max-width: 90%;
+  }
+
+  .join-text {
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .join-heading {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .reason-box-heading {
+    font-size: 15px;
+    line-height: 90%;
+  }
+
+  .reason-box-description {
+    font-size: 15px;
+    line-height: 110%;
+  }
+
+  .reason-box {
+    border-radius: 25px;
+    border: 5px solid #728F6E;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .join-heading {
+    font-size: 18px;
+  }
+
+  .reason-box-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-family: 'Averia Sans Libre';
+  }
+
+  .reason-box-number {
+    margin: 0; 
+    font-size: 18px;
+  }
+
+  .reason-box-row {
+    gap: 5px;
+  }
+
+  .reason-box-column {
+    gap: 15px;
+  }
+}
