@@ -2,7 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header/Header.js';
-import ContactUsPage from './pages/contact.js'
+import ContactUsPage from './pages/ContactUs/contact.js'
 import CriteriaPage from './pages/criteria';
 import PromotePage from './pages/promote';
 import HomePage from './pages/home';

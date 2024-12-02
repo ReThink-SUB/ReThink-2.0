@@ -1,6 +1,6 @@
 import Home from '../pages/home';
 import About from '../pages/about';
-import Contact from '../pages/contact';
+import Contact from '../pages/ContactUs/contact';
 import Criteria from '../pages/criteria';
 import Promote from '../pages/promote';
 

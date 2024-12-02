@@ -1,3 +1,6 @@
+.header {
+  margin-top: 10vh;
+}
 .contact-box {
   background-color: #E9F3E7;
   padding: 0;
@@ -29,7 +32,7 @@
 
 .box-right {
   flex: 1;
-  background-image: url('../images/contact-us-photo.png');
+  background-image: url('../../images/contact-us-photo.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -58,7 +61,7 @@ form textarea {
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  resize: none; /* Disables resizing of the textarea */
+  resize: none;
 }
 
 form input::placeholder,
@@ -71,12 +74,12 @@ form button {
   background-color: #F56038;
   color: white;
   border: none;
-  border-radius: 25px; /* Makes the button almost oval */
+  border-radius: 25px;
   cursor: pointer;
   font-family: 'Averia Sans Libre', sans-serif;
   font-weight: bold;
   font-size: 18px;
-  align-self: flex-end; /* Right-aligns the button */
+  align-self: flex-end;
   margin: 15px 0 20px 0;
   resize: none; 
 }
