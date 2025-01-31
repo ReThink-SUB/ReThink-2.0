@@ -7,6 +7,7 @@ import CriteriaPage from './pages/criteria';
 import PromotePage from './pages/promote';
 import HomePage from './pages/home';
 import AboutPage from './pages/About/about';
+import Footer from './components/Footer/Footer.js';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path={'/promote-your-business'} element={<PromotePage/>}/>
           <Route path={'/contact-us'} element={<ContactUsPage/>}/>
         </Routes>
+      <Footer/>
     </Router>
   );
 }
