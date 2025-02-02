@@ -10,6 +10,10 @@
     padding: 10px 0;
     color: white;
 }
+
+.footer-bottom p {
+    margin: 0;
+}
   
 .nav {
     display: flex;
@@ -17,7 +21,7 @@
     gap: 20px;
     margin-bottom: 10px;
     font-family: 'Averia Sans Libre', sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     color: #3A6351;
 }
   
@@ -31,6 +35,10 @@
 .nav a:hover {
     color: #1A3C34;
 }
+
+.nav-link button {
+    font-size: 12px;
+}
   
 .copyright {
     font-family: 'Karma', serif;
@@ -42,8 +50,9 @@
     display: flex; 
     justify-content: center; /* center horizontally */
     align-items: center; /* center vertically */
-    gap: 120px; /* Space between icons */
-    margin-bottom: 10px; /* Add spacing below the icons */
+    gap: 60px; /* Space between icons */
+    padding-top: 30px; /* Add spacing below the icons */
+    padding-bottom: 10px;
 }
   
 .media-links a {
