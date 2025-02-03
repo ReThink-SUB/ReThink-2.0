@@ -72,4 +72,33 @@
     transform: scale(1.1); /* enlarge on hover */
     background-color: #D94A25; /* darker shade of orange on hover */
 }
-  
+
+/* Media queries  */
+/* phone screen */
+@media (max-width: 480px) {
+    .nav {
+        gap: 0px;
+    }
+
+    .nav-link {
+        padding: 5px;
+    }
+
+    .nav-link button {
+        font-size: 8px;
+    }
+
+    .media-links a {
+        width: 35px; /* smaller icons */
+        height: 35px;
+        font-size: 20px; 
+    }
+
+    .media-links {
+        gap: 10px; 
+    }
+
+    .copyright {
+        font-size: 8px;
+    }
+}
