@@ -1,12 +1,12 @@
 .footer {
-    background-color: #E9F3E7; /* Light green background */
+    background-color: #E9F3E7;
     padding: 0px 0;
     text-align: center;
     font-family: 'Averia Sans Libre', sans-serif;
 }
   
 .footer-bottom {
-    background-color: #728F6E; /* Dark green background */
+    background-color: #728F6E;
     padding: 10px 0;
     color: white;
 }
@@ -48,10 +48,10 @@
 
 .media-links {
     display: flex; 
-    justify-content: center; /* center horizontally */
-    align-items: center; /* center vertically */
-    gap: 60px; /* Space between icons */
-    padding-top: 30px; /* Add spacing below the icons */
+    justify-content: center; 
+    align-items: center;
+    gap: 60px; 
+    padding-top: 30px;
     padding-bottom: 10px;
 }
   
@@ -59,22 +59,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 54px; /* circle */
-    height: 54px; /* circle */
+    width: 54px;
+    height: 54px;
     background-color: #F56038;
-    border-radius: 50%; /* circle */
-    color: white; /* icon */
+    border-radius: 50%;
+    color: white;
     font-size: 24px; 
     transition: transform 0.2s ease, background-color 0.2s ease;
 }
   
 .media-links a:hover {
-    transform: scale(1.1); /* enlarge on hover */
-    background-color: #D94A25; /* darker shade of orange on hover */
+    transform: scale(1.1);
+    background-color: #D94A25;
 }
 
-/* Media queries  */
-/* phone screen */
+
 @media (max-width: 480px) {
     .nav {
         gap: 0px;
@@ -89,7 +88,7 @@
     }
 
     .media-links a {
-        width: 35px; /* smaller icons */
+        width: 35px;
         height: 35px;
         font-size: 20px; 
     }

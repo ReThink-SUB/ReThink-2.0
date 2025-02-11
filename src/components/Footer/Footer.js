@@ -6,7 +6,6 @@ import './styles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookSquare, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-// run: npm install --save @fortawesome/react-fontawesome @fortawesome/free-brands-svg-icons @fortawesome/free-regular-svg-icons
 
 /**
  * This component renders a footer with clickable icons of all 4 types of contact
@@ -25,9 +24,6 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
     return (
       <footer className="footer">
         <div className="media-links">
-          {/* Social Media Icons 
-          opens to new page and prevents risk of opening new window
-          accesible to screen reader and alt-text */}
           <a href="https://www.facebook.com/ReThinkUW" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page">
             <FontAwesomeIcon icon={faFacebookSquare} className="icon" />
           </a>
@@ -43,7 +39,6 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
         </div>
         
         <div className="nav">
-          {/* Mapping through routes to reuse navigation links, taken from Header.js */}
           {routes.map((route, index) => (
             <li key={index} className={`nav-link`}>
               <button onClick={() => handleNavigation(route.path)}>
