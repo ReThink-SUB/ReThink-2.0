@@ -1,34 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@700&display=swap');
 
+.navDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FFFFF7;
+  padding: 1rem 5vw;
+  position: relative;
+}
+
 .logo {
   display: inline-block;
   vertical-align: middle;
   margin-right: 5vw;
 }
 
-img,
-.navContainer {
-  height: 4vw;
-  margin-top: 5vw;
-  margin-left: 5vw;
+.logo img {
+  height: 50px;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .navContainer {
-  display: inline-block;
-  vertical-align: middle;
-  width: clamp(300px, 60%, 800px);
-  right: 3vw;
+  display: flex;
+  align-items: center;
   background: #f7a325;
-  position: absolute;
   border-radius: 3vw;
-  margin-right: 5vw;
+  padding: 0.5rem 1rem;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .nav {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 100%;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  overflow-x: auto;
 }
 
 .nav-link {
@@ -40,12 +52,69 @@ img,
   font-size: clamp(14px, 2vw, 20px);
   font-family: 'Averia Sans Libre';
   font-weight: 700;
-  line-height: clamp(20px, 4vw, 28px);
-  letter-spacing: clamp(0.3px, 0.1vw, 0.5px);
-  word-wrap: break-word;
-  text-decoration: none;
   border: none;
-  outline: none;
-  padding: 0;
   background: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1300px) {
+  .nav-link button {
+    font-size: 15px
+  }
+}
+
+@media (max-width: 1200px) {
+  .nav {
+    gap: 0.5rem
+  }
+}
+
+@media (max-width: 1100px) {
+  .nav-link button {
+    font-size: 12px
+  }
+
+  .logo img {
+    height: 30px;
+  }
+
+  .navContainer {
+    padding: 0.5rem 0.25rem;
+  }
+
+}
+
+@media (max-width: 950px) {
+  .menu-toggle {
+    display: block;
+    z-index: 1001;
+    position: relative;
+  }
+
+  .nav-link button {
+    font-size: 15px
+  }
+
+  .navContainer {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background: #f7a325;
+    border-radius: 0;
+    padding: 1rem;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .navContainer.open {
+    display: flex;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
 }

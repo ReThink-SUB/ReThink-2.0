@@ -1,40 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Menu, X } from 'lucide-react';
 import routes from '../../constants/routes.js';
-import RethinkLogo from '../../images/header/RethinkLogo.jpg';
+import RethinkLogo from '../../images/RethinkLogo-no-background.png';
 import './styles.css';
 
-/**
- * This component renders a header with a logo on the right and uses
- * routes to create a clickable navbar on the left.
- *
- * @returns {Header} A React element that renders a greeting to the user.
- */
 export default function Header() {
   const navigate = useNavigate();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const handleNavigation = (path) => {
     navigate(path);
+    setMenuOpen(false);
   };
 
   return (
-    <div>
+    <header className="navDiv">
       <section className="logo">
         <img src={RethinkLogo} alt="ReThink Logo" />
       </section>
-      <section className="navContainer">
+      <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+        {menuOpen ? <X size={28} /> : <Menu size={28} />}
+      </button>
+
+      <nav className={`navContainer ${menuOpen ? 'open' : ''}`}>
         <ul className="nav">
           {routes.map((route, index) => (
-            <li key={index} className={`nav-link`}>
+            <li key={index} className="nav-link">
               <button onClick={() => handleNavigation(route.path)}>
-                {route.path === '/'
-                  ? 'home'
-                  : route.path.substring(1).replace(/-/gi, ' ')}
+                {route.path === '/' ? 'home' : route.path.substring(1).replace(/-/g, ' ')}
               </button>
             </li>
           ))}
         </ul>
-      </section>
-    </div>
+      </nav>
+    </header>
   );
 }
