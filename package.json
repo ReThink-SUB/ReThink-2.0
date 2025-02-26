@@ -51,6 +51,9 @@
     },
     "transformIgnorePatterns": [
       "/node_modules/(?!lucide-react)"
-    ]
+    ],
+    "moduleNameMapper": {
+      "\\.css$": "identity-obj-proxy"
+    }
   }
 }
