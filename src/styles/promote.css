@@ -1,7 +1,9 @@
 .promote-page-container {
   background-color: #FFFFF7;
-  margin-top: 30px;
-  padding-top: 100px;
+}
+
+.promote-section-header {
+  padding-top: 80px;
 }
 
 .promote-page-header {
@@ -16,7 +18,10 @@
 }
 
 .green-box {
-  margin: 100px;
+  margin-top: 25px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 100px;
   background-color: #E9F3E7;
   padding-left: 100px;
   padding-right: 100px;
@@ -138,6 +143,12 @@
   font-size: 12px; 
   margin-top: 20px;
   font-weight: 600;
+}
+
+.rethink-logo {
+  height: 4vw;
+  margin-top: 5vw;
+  margin-left: 5vw;
 }
 
 @media (max-width: 1400px) {
