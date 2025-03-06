@@ -1,0 +1,129 @@
+.footer {
+    background-color: #E9F3E7;
+    padding: 15px 20px;
+    font-family: 'Karma', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.footer-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding-left: 40px;
+    position: relative;
+    top: -25px;
+}
+
+.footer-logo {
+    width: 140px;
+    height: auto;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.footer-description strong {
+    font-family: 'Averia Sans Libre', sans-serif;
+    color: #000000;
+}
+
+.footer-description {
+    font-size: 13px;
+    color: #1F242191;
+    max-width: 250px;
+    line-height: 1.4;
+    margin-left: 10px;
+}
+
+.footer-middle {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-title {
+    font-family: 'Averia Sans Libre', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.media-links a {
+    font-size: 22px;
+    color: #000000;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.media-links a:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.footer-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: left;
+    padding-right: 40px;
+}
+
+.footer-menu-title {
+    font-family: 'Averia Sans Libre', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #000000;
+    margin-bottom: 5px;
+    position: relative;
+    left: -104px;
+}
+
+.footer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.footer-menu li {
+    font-size: 13px;
+}
+
+.footer-menu button {
+    background: none;
+    border: none;
+    font-size: 13px;
+    color: #1F242191;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+    text-transform: capitalize;
+}
+
+.footer-menu button:hover {
+    color: #1A3C34;
+    text-decoration: underline;
+}

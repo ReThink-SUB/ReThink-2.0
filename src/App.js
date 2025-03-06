@@ -7,7 +7,7 @@ import CriteriaPage from './pages/criteria';
 import PromotePage from './pages/promote';
 import HomePage from './pages/home';
 import AboutPage from './pages/About/about';
-import Footer from './components/Footer/Footer.js';
+import Footer from './components/Footer/Footer2.js';
 
 function App() {
   return (
