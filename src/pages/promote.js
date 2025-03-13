@@ -9,7 +9,9 @@ function PromotePage() {
   const FORM_URL = "https://forms.office.com/Pages/ResponsePage.aspx?id=W9229i_wGkSZoBYqxQYL0gWQVJmCk39CiTHrFRMC5TFURUU3Mlc2ODJYQVREWklUOFFSV05ITEowSS4u";
   return (
     <div className="promote-page-container">
-      <SectionHeader title="Promote Your Business" subtitle="Partner with ReThink and reach a community like yours that's deciated to sustainability"/>
+      <div className="promote-section-header">
+        <SectionHeader title="Promote Your Business" subtitle="Partner with ReThink and reach a community like yours that's deciated to sustainability"/>
+      </div>
       <div className="green-box">
         <div className="bottom-row">
           <div className="reason-col">

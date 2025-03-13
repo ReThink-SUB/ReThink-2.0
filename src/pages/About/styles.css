@@ -1,23 +1,99 @@
 @import url('https://fonts.googleapis.com/css2?family=Karma:wght@600&display=swap');
 
-.about-page {
-  margin-top: 80px;
+.team-members-container {
+  background-color: #FFFFF7;
+}
+
+section {
+  padding-top: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.member-col {
+  margin-bottom: 50px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.member-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  height: auto;
+  background-color: white;
+  padding-top: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 4px 4px rgba(0,0,0,0.15);}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 175px;
+  overflow: hidden;
+  margin: 0px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.image img {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120%;
+  width: 100%;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+.member-name {
+  font-size: 16px;
+  font-family: 'Averia Sans Libre';
+  color: #728F6E;
+  padding-top: 5px;
+  margin: 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+}
+
+.member-role {
+  font-size: 14px;
+  font-family: 'Karma';
+  margin: 5px;
+  padding-bottom: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.about-page {
+  padding-top: 80px;
+  background-color: #FFFFF7;
 }
   
 .who-we-are-container {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 100px;
-  margin-top: 40px;
+  background-color: #FFFFF7;
+  padding-top: 40px;
 }
 
 .team-photo {
-  width: 700px;
-  height: calc(700px * 3 / 4);
+  width: 50%;
+  height: auto;
   object-fit: cover;
-  margin: 0;
+  margin-left: 50px;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
 }
 
 .who-we-are-text {
@@ -25,4 +101,157 @@
   max-width: 400px;
   font-size: 20px;
   line-height: 24.7px;
+}
+
+.filter-button-row {
+  background-color: #FFFFF7;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 125px;
+  padding-right: 125px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.filter-button {
+  background: rgba(245, 96, 56, 0.50);  
+  border-radius: 17px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border: 0;
+}
+
+.filter-button:hover {
+  background-color: #F56038;
+}
+
+.filter-button-text {
+  padding: 0;
+  margin: 0;
+  color: #3B2B23;
+  font-family: "Averia Sans Libre";
+  font-size: 16px;
+} 
+
+@media (max-width: 1150px) { 
+  .who-we-are-text {
+    font-size: 16px;
+  }
+
+  .filter-button {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 950px) { 
+  .team-photo {
+    width: 100%;
+    margin-left: 0px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .filter-button-text {
+    font-size: 14px;
+  }
+
+  .filter-button-row {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  .who-we-are-container {
+    flex: display;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 25px;
+  }
+
+  .who-we-are-text {
+    font-size: 20px;
+    max-width: none;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .team-members-container {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) { 
+  .who-we-are-text {
+    font-size: 16px;
+  }
+
+  .filter-button-row {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .member-box {
+    padding: 15px;
+    width: 70%;
+  }
+
+  .member-name {
+    font-size: 14px;
+  }
+
+  .member-role {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 650px) {
+  .filter-button {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .filter-button-text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 550px) {
+  .member-box {
+    padding: 15px;
+    width: 50%;
+  }
+}
+
+@media (max-width: 500px) { 
+  .who-we-are-text {
+    font-size: 12px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .team-photo {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .member-name {
+    font-size: 14px;
+  }
+
+  .member-role {
+    font-size: 12px;
+  }
+
+  .filter-button-row {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .filter-button-text {
+    font-size: 10px;
+  }
 }
