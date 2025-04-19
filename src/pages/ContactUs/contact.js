@@ -1,6 +1,7 @@
 import React from 'react';
 import SectionHeader from '../../components/SectionHeader/SectionHeader';
 import './style.css';
+import emailjs from '@emailjs/browser';
 
 function ContactUsPage() {
   return (

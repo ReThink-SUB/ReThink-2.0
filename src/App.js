@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header/Header.js';
 import ContactUsPage from './pages/ContactUs/contact.js'
 import CriteriaPage from './pages/criteria';
-import PromotePage from './pages/promote';
+import PromotePage from './pages/Promote/promote';
 import HomePage from './pages/home';
 import AboutPage from './pages/About/about';
 import Footer from './components/Footer/Footer2.js';

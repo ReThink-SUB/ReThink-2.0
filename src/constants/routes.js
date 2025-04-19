@@ -2,7 +2,7 @@ import Home from '../pages/home';
 import About from '../pages/About/about';
 import Contact from '../pages/ContactUs/contact';
 import Criteria from '../pages/criteria';
-import Promote from '../pages/promote';
+import Promote from '../pages/Promote/promote';
 
 const routes = [
   { path: '/', component: Home, exact: true },
