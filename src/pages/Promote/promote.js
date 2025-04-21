@@ -1,9 +1,9 @@
 import React from 'react';
-import '../styles/promote.css';
-import RethinkLogoNoBackground from '../images/RethinkLogo-no-background.png'
-import RethinkPromoteBusinessImage from '../images/promote-business/rethink-promote-business-image.png'
-import '../components/SectionHeader/SectionHeader';
-import SectionHeader from '../components/SectionHeader/SectionHeader';
+import './promote.css';
+import RethinkLogoNoBackground from '../../images/RethinkLogo-no-background.png'
+import RethinkPromoteBusinessImage from '../../images/promote-business/rethink-promote-business-image.png'
+import '../../components/SectionHeader/SectionHeader';
+import SectionHeader from '../../components/SectionHeader/SectionHeader';
 
 function PromotePage() {
   const FORM_URL = "https://forms.office.com/Pages/ResponsePage.aspx?id=W9229i_wGkSZoBYqxQYL0gWQVJmCk39CiTHrFRMC5TFURUU3Mlc2ODJYQVREWklUOFFSV05ITEowSS4u";
