@@ -62,7 +62,7 @@
 
 .nav-link button.active {
   background-color: #24520A;           
-  color: #E9F3E7;                       
+  color: white;                       
 }
 
 @media (max-width: 1300px) {
