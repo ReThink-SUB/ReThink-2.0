@@ -29,9 +29,9 @@
 .navContainer {
   display: flex;
   align-items: center;
-  background: #f7a325;
+  background: white;
+  border: 2px solid #24520A;
   border-radius: 3vw;
-  padding: 0.5rem 1rem;
   overflow: hidden;
   white-space: nowrap;
 }
@@ -48,13 +48,21 @@
 }
 
 .nav-link button {
-  color: #3b2b23;
+  color: #24520A;                    
+  background-color: white;            
+  border: none;         
+  border-radius: 999px;                
   font-size: clamp(14px, 2vw, 20px);
   font-family: 'Averia Sans Libre';
   font-weight: 700;
-  border: none;
-  background: none;
+  padding: 0.5rem 1.25rem;
   cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link button.active {
+  background-color: #24520A;           
+  color: #E9F3E7;                       
 }
 
 @media (max-width: 1300px) {
