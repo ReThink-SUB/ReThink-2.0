@@ -27,11 +27,6 @@ export default function Header() {
       <nav className={`navContainer ${menuOpen ? 'open' : ''}`}>
         <ul className="nav">
           {routes.map((route, index) => {
-            // <li key={index} className="nav-link">
-            //   <button onClick={() => handleNavigation(route.path)}>
-            //     {route.path === '/' ? 'home' : route.path.substring(1).replace(/-/g, ' ')}
-            //   </button>
-            // </li>
             const label = route.path === '/' ? 'home' : route.path.substring(1).replace(/-/g, ' ');
             const isActive = location.pathname === route.path; // 🆕 check if active
 
