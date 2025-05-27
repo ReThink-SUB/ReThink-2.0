@@ -162,15 +162,14 @@ function AboutPage() {
 function FilterButton({ filter, isActive, onClick }) {
   return (
     <button
-      className="filter-button"
+      className={`filter-button ${isActive ? 'selected' : ''}`}
       onClick={onClick}
-      style={{
-        background: isActive ? "#F56038": "rgba(245, 96, 56, 0.50)",
-      }}>
+    >
       <p className="filter-button-text">{filter}</p>
     </button>
   );
 }
+
 
 function TeamMemberGrid({ activeFilter }) {
   const filteredTeams =
