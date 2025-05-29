@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #FFFFF7;
+  background-color: #FFFFFF;
   padding: 1rem 5vw;
   position: relative;
 }
@@ -62,7 +62,7 @@
 
 .nav-link button.active {
   background-color: #24520A;           
-  color: white;                       
+  color: #E9F3E7;                       
 }
 
 @media (max-width: 1300px) {
@@ -110,7 +110,7 @@
     left: 0;
     width: 100%;
     flex-direction: column;
-    background: #f7a325;
+    background: #C2512F;
     border-radius: 0;
     padding: 1rem;
     z-index: 1000;
