@@ -27,14 +27,15 @@
   font-size: 32px;
   font-family: "Averia Sans Libre";
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  margin-left: 10px;
   margin-left: 10px;
 }
 
 .reason-col {
   display: flex;
   flex-direction: column;
-  flex: 4.5;
+  flex: 6;
 }
 
 .join-col {
@@ -113,9 +114,9 @@
   font-size: 22px;
   text-align: center;
   font-family: "Karma";
-  margin-left: 85px;
-  margin-right: 85px;
-  margin-top: 0px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 10px;
   line-height: 130%;
 }
 
@@ -144,7 +145,6 @@
 .rethink-logo {
   height: 4vw;
   margin-top: 5vw;
-  margin-left: 1vw;
 }
 
 @media (max-width: 1400px) {
