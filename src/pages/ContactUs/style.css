@@ -1,77 +1,134 @@
-.header {
-  margin-top: 10vh;
-}
-.contact-box {
-  background-color: #E9F3E7;
-  padding: 0;
-  margin: 10vh;
-  height: calc(120vh - 160px);
-  display: flex;
-  overflow: hidden;
+/* src/pages/ContactUs/style.css */
+:root {
+  --dark-green:    #305118;
+  --medium-green:  #4f6b4f;
+  --light-green:   #e8f2e6;
+  --text-brown:    #4b3a2c;
+  --accent-peach:  #f4a56c;
+  --placeholder:   #ddd;
 }
 
-.box-left {
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8vh 5vw 4vh 5vw;
+  gap: 1rem;
+}
+
+.stripe-container {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+  gap: 4px;
+}
+
+.stripe {
+  width: 100%;
+  height: 2px;
+  border-radius: 1px;
+}
+
+.stripe.green {
+  background-color: var(--medium-green);
+}
+
+.stripe.mint {
+  background-color: var(--light-green);
+}
+
+.stripe.orange {
+  background-color: var(--accent-peach);
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 20px;
-}
-
-.title {
-  color: #3B2B23;
-  font-size: 32px;
-  font-family: 'Averia Sans Libre', sans-serif;
-  font-weight: 700;
-  line-height: 1.4;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-  margin: 25px 0 20px 0;
   text-align: center;
+  max-width: 800px;
 }
 
-.box-right {
-  flex: 1;
-  background-image: url('../../images/contact-us-photo.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.header-text h2 {
+  color: var(--text-brown);
+  font-family: 'Averia Sans Libre', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
   margin: 0;
-  padding: 0;
 }
 
-form {
+.header-text .subtext {
+  color: var(--medium-green);
+  font-family: 'Averia Sans Libre', sans-serif;
+  font-size: 18px;
+  margin: 0.5rem 0 0;
+  line-height: 1.5;
+}
+
+.contact-box {
+  display: flex;
+  overflow: hidden;
+  margin: 0 5vw 8vh 5vw;
+  background-color: var(--light-green);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.contact-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--light-green);
+}
+
+.contact-left .title {
+  color: var(--text-brown);
+  font-family: 'Averia Sans Libre', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.contact-left form {
   display: flex;
   flex-direction: column;
   width: 100%;
   max-width: 500px;
-  gap: 10px; 
+  gap: 0.75rem;
 }
 
-form label {
+.contact-left form label {
   font-family: 'Averia Sans Libre', sans-serif;
-  color: #3B2B23;
+  color: var(--medium-green);
 }
 
-form input,
-form textarea {
-  padding: 10px;
+.contact-left form input,
+.contact-left form textarea {
+  padding: 0.5rem;
   background-color: white;
   border: 1px solid white;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  font-family: 'Averia Sans Libre', sans-serif;
+  color: #333;
+}
+
+.contact-left form input::placeholder,
+.contact-left form textarea::placeholder {
+  color: var(--placeholder);
+}
+
+.contact-left form textarea {
+  height: 120px;
   resize: none;
 }
 
-form input::placeholder,
-form textarea::placeholder {
-  color: transparent;
-}
-
-form button {
-  padding: 5px 50px;
-  background-color: #F56038;
+.contact-left form button {
+  padding: 0.5rem 2rem;
+  background-color: var(--dark-green);
   color: white;
   border: none;
   border-radius: 25px;
@@ -80,11 +137,77 @@ form button {
   font-weight: bold;
   font-size: 18px;
   align-self: flex-end;
-  margin: 15px 0 20px 0;
-  resize: none; 
+  margin-top: 1rem;
 }
 
-form textarea {
-  height: 120px; 
-  resize: none; 
+/* Right‐side image (contact-us-photo.png) */
+.contact-right {
+  flex: 1;
+  background-image: url('../../images/contact-us-photo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.involved-box {
+  display: flex;
+  overflow: hidden;
+  margin: 8vh 5vw 8vh 5vw;
+  background-color: var(--light-green);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.involved-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 1.5rem;
+  background-color: var(--light-green);
+}
+
+.join-title {
+  color: var(--text-brown);
+  font-family: 'Averia Sans Libre', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.join-description {
+  color: var(--medium-green);
+  font-family: 'Averia Sans Libre', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  max-width: 450px;
+}
+
+.join-description .join-email {
+  color: #d84315;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.apply-button {
+  padding: 0.75rem 2rem;
+  background-color: var(--dark-green);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: 'Averia Sans Libre', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Right‐side image (contact-us-image.png) */
+.involved-right {
+  flex: 1;
+  background-image: url('../../images/contact-us-image.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
