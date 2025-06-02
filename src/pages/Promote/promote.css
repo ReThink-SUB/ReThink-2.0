@@ -1,5 +1,5 @@
 .promote-page-container {
-  background-color: #FFFFF7;
+  background-color: #FFFFFF;
 }
 
 .promote-section-header {
@@ -8,12 +8,6 @@
 
 .promote-page-header {
   font-family: 'Averia Sans Libre';
-  margin-left: 300px;
-}
-
-.promote-page-subheader {
-  font-family: 'Karma';
-  color: #728F6E;
   margin-left: 300px;
 }
 
@@ -30,16 +24,18 @@
 }
 
 .join-heading {
-  font-size: 30px;
+  font-size: 32px;
   font-family: "Averia Sans Libre";
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  margin-left: 10px;
+  margin-left: 10px;
 }
 
 .reason-col {
   display: flex;
   flex-direction: column;
-  flex: 4.5;
+  flex: 6;
 }
 
 .join-col {
@@ -52,9 +48,9 @@
 
 .reason-box {
   border-radius: 25px;
-  border: 5px solid #728F6E;
+  border: 5px solid #24520A;
   padding: 25px;
-  background-color: #FFFFF7;
+  background-color: white;
   margin-bottom: 20px;
 }
 
@@ -70,7 +66,7 @@
   justify-content: center;
   width: 40px;
   height: 40px;
-  background-color: #F56038;
+  background-color: #C2512F;
   color: white;
   border-radius: 50%;
   font-weight: bold;
@@ -82,6 +78,7 @@
   margin: 0;
   padding: 20px;
   font-size: 22px;
+  color: #FFFFF7;
 }
 
 .reason-box-heading {
@@ -117,9 +114,9 @@
   font-size: 22px;
   text-align: center;
   font-family: "Karma";
-  margin-left: 85px;
-  margin-right: 85px;
-  margin-top: 0px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 10px;
   line-height: 130%;
 }
 
@@ -134,9 +131,9 @@
 }
 
 .sign-up-button button {
-  background-color: #F56038;
+  background-color: #24520A;
   border-radius: 17px; 
-  color: white;    
+  color: #E9F3E7;    
   padding: 5px 35px;  
   border: none;    
   cursor: pointer;   
@@ -148,7 +145,6 @@
 .rethink-logo {
   height: 4vw;
   margin-top: 5vw;
-  margin-left: 5vw;
 }
 
 @media (max-width: 1400px) {
@@ -304,7 +300,7 @@
 @media (max-width: 500px) { 
   .green-box {
     margin: 50px;
-    background-color: #E9F3E7;
+    background-color: white;
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 50px;
@@ -342,7 +338,7 @@
 
   .reason-box {
     border-radius: 25px;
-    border: 5px solid #728F6E;
+    border: 5px solid #24520A;
     padding: 15px;
     margin-bottom: 20px;
   }

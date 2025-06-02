@@ -1,7 +1,31 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import SectionHeader from '../../components/SectionHeader/SectionHeader';
 import './style.css';
+import emailjs from '@emailjs/browser';
 
 function ContactUsPage() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    
+    const serviceId = 'service_pazoz54';
+    const templateId = 'template_f9r6pje';
+    const publicKey = 'NWwowGG_uHhk0RZAZ';
+
+    emailjs.sendForm(serviceId, templateId, form.current, {
+      publicKey: publicKey,
+    })
+      .then((result) => {
+        console.log('Message sent successfully', result.text);
+        alert('Message sent successfully!');
+        form.current.reset();
+      }, (error) => {
+        console.log('Message failed to send', error.text);
+        alert('Failed to send message. Please try again.');
+      });
+  };
+
   return (
     <>
       <div className="section-header">
@@ -27,6 +51,7 @@ function ContactUsPage() {
       </div>
 
       <div className="contact-box">
+Contact-Us-Page
         <div className="contact-left">
           <p className="title">Let’s Chat!</p>
           <form>
