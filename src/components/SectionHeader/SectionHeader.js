@@ -7,12 +7,9 @@ import './styles.css';
  */
 export default function SectionHeader(props) {
 
-  // State hooks for title and subtitle width; since the right lines need to be calculated dynamically.
-  // Also includes hooks for styling the right lines just for cleanliness (calculations altogether).
+  // State hook for title width; all right lines will use the same width
   const [titleWidth, setTitleWidth] = useState(0);
-  const [subtitleWidth, setSubtitleWidth] = useState(0);
-  const [styleTitleLineWidth, setstyleTitleLineWidth] = useState({});
-  const [styleSubtitleLineWidth, setstyleSubtitleLineWidth] = useState({});
+  const [styleLineWidth, setStyleLineWidth] = useState({});
 
   /**
    * Computes and returns width of given text based on its corresponding CSS style.
@@ -35,18 +32,16 @@ export default function SectionHeader(props) {
   };
 
   /**
-   * If title and subtitle were properly passed in (ie. properly formatted component),
-   * calculate and set the widths. Also set styles of the right title and subtitle lines.
+   * If title was properly passed in, calculate and set the width.
+   * All three lines will use the same width based on the title.
    */
   const setWidthAndStyles = useCallback(() => {
-    if (props.title && props.subtitle){
-      setTitleWidth(measureWidth(props.title, 'text title'));
-      setSubtitleWidth(measureWidth(props.subtitle, 'text subtitle'));
-      
-      setstyleTitleLineWidth({ width: `calc(100% - ${titleWidth}px - 12%)` });
-      setstyleSubtitleLineWidth({ width: `calc(100% - ${subtitleWidth}px - 12%)` });
+    if (props.title){
+      const newTitleWidth = measureWidth(props.title, 'text title');
+      setTitleWidth(newTitleWidth);
+      setStyleLineWidth({ width: `calc(100% - ${newTitleWidth}px - 12%)` });
     }
-  }, [props.title, props.subtitle, titleWidth, subtitleWidth]);
+  }, [props.title, titleWidth]);
 
 
   /**
@@ -55,6 +50,10 @@ export default function SectionHeader(props) {
   useEffect(() => {
     setWidthAndStyles();
     window.addEventListener("resize", setWidthAndStyles, false);
+    
+    return () => {
+      window.removeEventListener("resize", setWidthAndStyles, false);
+    };
   }, [setWidthAndStyles]);
 
 
@@ -67,9 +66,9 @@ export default function SectionHeader(props) {
       </div>
       
       <div className="line-container">
-        <div className="rightline top" style={styleTitleLineWidth}></div>
-        <div className="rightline mid" style={styleTitleLineWidth}></div>
-        <div className="rightline bot" style={styleSubtitleLineWidth}></div>
+        <div className="rightline top" style={styleLineWidth}></div>
+        <div className="rightline mid" style={styleLineWidth}></div>
+        <div className="rightline bot" style={styleLineWidth}></div>
       </div>
 
       <div className="text-container">
