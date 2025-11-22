@@ -41,7 +41,7 @@ export default function SectionHeader(props) {
       setTitleWidth(newTitleWidth);
       setStyleLineWidth({ width: `calc(100% - ${newTitleWidth}px - 12%)` });
     }
-  }, [props.title, titleWidth]);
+  }, [props.title]);
 
 
   /**
