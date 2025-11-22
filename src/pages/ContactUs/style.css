@@ -71,8 +71,8 @@ form textarea::placeholder {
 
 form button {
   padding: 5px 50px;
-  background-color: #F56038;
-  color: white;
+  background-color: #24520A;
+  color: #E9F3E7;
   border: none;
   border-radius: 25px;
   cursor: pointer;
