@@ -7,8 +7,7 @@ import './styles.css';
  */
 export default function SectionHeader(props) {
 
-  // State hook for title width; all right lines will use the same width
-  const [titleWidth, setTitleWidth] = useState(0);
+  // State hook for right line width styling
   const [styleLineWidth, setStyleLineWidth] = useState({});
 
   /**
@@ -37,9 +36,8 @@ export default function SectionHeader(props) {
    */
   const setWidthAndStyles = useCallback(() => {
     if (props.title){
-      const newTitleWidth = measureWidth(props.title, 'text title');
-      setTitleWidth(newTitleWidth);
-      setStyleLineWidth({ width: `calc(100% - ${newTitleWidth}px - 12%)` });
+      const titleWidth = measureWidth(props.title, 'text title');
+      setStyleLineWidth({ width: `calc(100% - ${titleWidth}px - 12%)` });
     }
   }, [props.title]);
 
