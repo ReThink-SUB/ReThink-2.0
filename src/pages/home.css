@@ -1,0 +1,213 @@
+.home-page {
+  background-color: #FFFFF7;
+  min-height: 100vh;
+  padding-bottom: 100px;
+}
+
+.home-section {
+  padding-top: 80px;
+  background-color: #FFFFF7;
+}
+
+.banner-image-section {
+  padding: 40px 0 20px 0;
+  background-color: #FFFFF7;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.home-banner {
+  width: 78%;
+  margin-left: 11%;
+  margin-right: 11%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+.banner-overlay {
+  position: absolute;
+  left: 11%;
+  top: 40px;
+  width: calc(78% * 2 / 5);
+  height: 500px;
+  background-color: #E9F3E7D9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 50px;
+  box-sizing: border-box;
+}
+
+.banner-overlay-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.banner-overlay-title {
+  color: #3B2B23;
+  font-size: 48px;
+  font-family: 'Averia Sans Libre', cursive;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 20px 0;
+}
+
+.green-text {
+  color: #728F6E;
+}
+
+.banner-overlay-subtitle {
+  color: #666666;
+  font-size: 20px;
+  font-family: 'Karma', serif;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.banner-overlay-button-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.view-businesses-btn {
+  background-color: #4A6B47;
+  color: white;
+  font-family: 'Averia Sans Libre', cursive;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-businesses-btn:hover {
+  background-color: #3d5a3b;
+}
+
+.map-section {
+  padding: 20px 0 40px 0;
+  background-color: #FFFFF7;
+  display: flex;
+  justify-content: center;
+}
+
+.map-container {
+  width: 78%;
+  margin-left: 11%;
+  margin-right: 11%;
+  height: 70vh;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .banner-overlay-title {
+    font-size: 36px;
+  }
+  
+  .banner-overlay-subtitle {
+    font-size: 18px;
+  }
+  
+  .banner-overlay {
+    padding: 30px 40px;
+  }
+  
+  .view-businesses-btn {
+    font-size: 14px;
+    padding: 10px 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-image-section {
+    padding: 40px 0 20px 0;
+  }
+  
+  .home-banner {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 400px;
+  }
+  
+  .banner-overlay {
+    left: 5%;
+    top: 40px;
+    width: calc(90% * 2 / 5);
+    height: 400px;
+    padding: 25px 30px;
+  }
+  
+  .banner-overlay-title {
+    font-size: 28px;
+  }
+  
+  .banner-overlay-subtitle {
+    font-size: 16px;
+  }
+  
+  .view-businesses-btn {
+    font-size: 13px;
+    padding: 9px 20px;
+  }
+  
+  .map-container {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 60vh;
+  }
+}
+
+@media (max-width: 500px) {
+  .banner-image-section {
+    padding: 40px 0 20px 0;
+  }
+  
+  .home-banner {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    height: 350px;
+  }
+  
+  .banner-overlay {
+    left: 2.5%;
+    top: 40px;
+    width: calc(95% * 3 / 5);
+    height: 350px;
+    padding: 20px 25px;
+  }
+  
+  .banner-overlay-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .banner-overlay-subtitle {
+    font-size: 14px;
+  }
+  
+  .view-businesses-btn {
+    font-size: 12px;
+    padding: 8px 18px;
+  }
+  
+  .map-container {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    height: 50vh;
+  }
+}

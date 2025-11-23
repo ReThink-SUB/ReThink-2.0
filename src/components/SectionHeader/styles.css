@@ -1,17 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@700&family=Karma:wght@600&display=swap');
 
+.parent {
+  position: relative;
+}
+
 .line-container{
   width: 100%; 
   height: 100%; 
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .leftline {
   width: 10%; 
   height: 0px; 
   left: 0px;
-
   position: absolute;
 }
 
@@ -19,28 +24,27 @@
   width: 100%;
   height: 0px; 
   right: 0px;
-
   position: absolute;
 }
 
 .top{
-  top: 0px; 
-  border: 1px #24520A solid
+  top: 16px; 
+  border: 1px #728F6E solid
 }
 
 .mid {
-  top: 17px; 
-  border: 1px #4B607F solid
+  top: 33px; 
+  border: 1px #F7A325 solid
 }
 
 .bot {
-  top: 29.75px; 
-  border: 1px #C2512F solid
+  top: 45.75px; 
+  border: 1px #F56038 solid
 }
 
 .text {
   position: relative;
-  top: -12px;
+  top: 0px;
   width: fit-content;
   left: 11%
 }
