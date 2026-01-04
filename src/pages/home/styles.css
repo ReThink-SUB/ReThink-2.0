@@ -1,110 +1,357 @@
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #FFFFF7;
+.home-page {
+  background-color: #FFFFF7;
+  min-height: 100vh;
+  padding-bottom: 100px;
+}
+
+.home-section {
+  padding-top: 80px;
+  background-color: #FFFFF7;
+}
+
+.banner-image-section {
+  padding: 40px 0 20px 0;
+  background-color: #FFFFF7;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.home-banner {
+  width: 78%;
+  margin-left: 11%;
+  margin-right: 11%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+.banner-overlay {
+  position: absolute;
+  left: 11%;
+  top: 40px;
+  width: calc(78% * 2 / 5);
+  height: 500px;
+  background-color: #E9F3E7D9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 50px;
+  box-sizing: border-box;
+}
+
+.banner-overlay-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.banner-overlay-title {
+  color: #3B2B23;
+  font-size: 48px;
+  font-family: 'Averia Sans Libre', cursive;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 20px 0;
+}
+
+.green-text {
+  color: #728F6E;
+}
+
+.banner-overlay-subtitle {
+  color: #666666;
+  font-size: 20px;
+  font-family: 'Karma', serif;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.banner-overlay-button-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.view-businesses-btn {
+  background-color: #4A6B47;
+  color: white;
+  font-family: 'Averia Sans Libre', cursive;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-businesses-btn:hover {
+  background-color: #3d5a3b;
+}
+
+.map-section {
+  padding: 20px 0 40px 0;
+  background-color: #FFFFF7;
+  display: flex;
+  justify-content: center;
+}
+
+.map-container {
+  width: 78%;
+  margin-left: 11%;
+  margin-right: 11%;
+  height: 70vh;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Business listing section */
+.business-section {
+  padding: 40px 0;
+  background-color: #FFFFF7;
+}
+
+.business-content {
+  width: 78%;
+  margin-left: 11%;
+  margin-right: 11%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.search-container {
+  flex: 1;
+  margin-right: 30px;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #E9F3E7;
+  box-sizing: border-box;
+}
+
+.categories {
+  display: flex;
+  gap: 10px;
+}
+
+.category-btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid #728F6E;
+  background-color: #FFFFF7;
+  color: #728F6E;
+  cursor: pointer;
+  font-family: 'Averia Sans Libre';
+}
+
+.category-btn.active {
+  background-color: #728F6E;
+  color: white;
+  border-color: #728F6E;
+  font-family: 'Averia Sans Libre';
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e88c6f;
+  border-radius: 6px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.card-images {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 12px;
+  height: 130px;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.bus-logo,
+.thumbnail {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+  margin-bottom: 0px;
+  padding: 0;
+}
+
+.business-name {
+  color: #e6533c;
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-family: 'Karma-Bold';
+  font-size: 20px;
+}
+
+.description {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.4;
+  font-family: 'Karma';
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .banner-overlay-title {
+    font-size: 36px;
   }
-  
-  .container {
-    padding: 40px;
+
+  .banner-overlay-subtitle {
+    font-size: 18px;
   }
-  
+
+  .banner-overlay {
+    padding: 30px 40px;
+  }
+
+  .view-businesses-btn {
+    font-size: 14px;
+    padding: 10px 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-image-section {
+    padding: 40px 0 20px 0;
+  }
+
+  .home-banner {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 400px;
+  }
+
+  .banner-overlay {
+    left: 5%;
+    top: 40px;
+    width: calc(90% * 2 / 5);
+    height: 400px;
+    padding: 25px 30px;
+  }
+
+  .banner-overlay-title {
+    font-size: 28px;
+  }
+
+  .banner-overlay-subtitle {
+    font-size: 16px;
+  }
+
+  .view-businesses-btn {
+    font-size: 13px;
+    padding: 9px 20px;
+  }
+
+  .map-container {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 60vh;
+  }
+
+  .business-content {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
   .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 24px;
+    flex-direction: column;
+    gap: 16px;
   }
 
   .search-container {
-    flex: 1;
-    margin-right: 30px;
-  }
-  
-  .search-bar {
     width: 100%;
-    padding: 10px 16px;
-    border: none;
-    border-radius: 6px;
-    background-color: #E9F3E7;
+    margin-right: 0;
   }
-  
+
   .categories {
-    display: flex;
-    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  
-  .category-btn {
-    padding: 8px 16px;
-    border-radius: 6px;
-    border: 1px solid #728F6E;
-    background-color: #FFFFF7;
-    color: #728F6E;
-    cursor: pointer;
-    font-family: 'Averia Sans Libre';
+}
+
+@media (max-width: 500px) {
+  .banner-image-section {
+    padding: 40px 0 20px 0;
   }
-  
-  .category-btn.active {
-    background-color: #728F6E;
-    color: white;
-    border-color: #728F6E;
-    font-family: 'Averia Sans Libre';
+
+  .home-banner {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    height: 350px;
   }
-  
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 24px;
+
+  .banner-overlay {
+    left: 2.5%;
+    top: 40px;
+    width: calc(95% * 3 / 5);
+    height: 350px;
+    padding: 20px 25px;
   }
-  
-  .card {
-    background: white;
-    border: 1px solid #e88c6f;
-    border-radius: 6px;
-    padding: 16px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-    max-width: 500px; 
-    margin: 0 auto;
+
+  .banner-overlay-title {
+    font-size: 24px;
+    margin-bottom: 15px;
   }
-  
-  .card-images {
-    display: flex;
-    gap: 16px;
-    margin-bottom: 12px;
-    height: 130px;
-    justify-content: center; 
-    width: 100%;
-    box-sizing: border-box;
-  }
-  .bus-logo,
-  .thumbnail {
-    width: 50%;
-    height: 100%;
-    object-fit: cover;  
-    border-radius: 6px;
-    display: block;
-    margin-bottom: 0px;
-    padding: 0;
-    background-color: none;
-  }
-  
-  
-  .business-name {
-    color: #e6533c;
-    font-weight: bold;
-    margin-bottom: 8px;
-    font-family: 'Karma-Bold';
-    font-size: 20px;
-  }
-  
-  .description {
+
+  .banner-overlay-subtitle {
     font-size: 14px;
-    color: #444;
-    line-height: 1.4;
-    font-family: 'Karma';
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
   }
-  
+
+  .view-businesses-btn {
+    font-size: 12px;
+    padding: 8px 18px;
+  }
+
+  .map-container {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    height: 50vh;
+  }
+
+  .business-content {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
