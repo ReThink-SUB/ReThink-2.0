@@ -9,7 +9,7 @@ function ContactUsPage() {
   const handleApplyRedirect = (e) => {
     e.preventDefault();
     //TODO: add new application link
-    window.open('https://google.com', '_blank', 'noopener,noreferrer');
+    window.open('https://forms.office.com/pages/responsepage.aspx?id=W9229i_wGkSZoBYqxQYL0sMws091HfVPpiyCi8NdQV1UNFlCR1ZGVk5SNUVIQUFCQlVIS0U3NVdJVi4u&route=shorturl', '_blank', 'noopener,noreferrer');
   };
   
   const sendEmail = (e) => {
@@ -67,7 +67,7 @@ function ContactUsPage() {
           <p className = "lefttitle">Join Rethink!</p>
           <p>
           We have rolling applications to join our team. Keep an eye out on our social media if you're interested! If you’re a current University of Washington student, apply now to join. Positions available:
-          <em orange> marketing, business development, researchers, front end developers.</em> Reach out to join@rethinkuw.org with any questions.
+          <em orange> marketing, business development, researchers, front end developers.</em> Reach out to <a href="mailto:rethink@uw.edu">rethink@uw.edu</a> with any questions.
         </p>
         <form onSubmit={handleApplyRedirect}><button type="submit">Apply Here</button></form>
         </div>
