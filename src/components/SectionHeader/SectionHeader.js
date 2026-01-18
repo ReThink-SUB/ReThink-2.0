@@ -40,13 +40,17 @@ export default function SectionHeader(props) {
    */
   const setWidthAndStyles = useCallback(() => {
     if (props.title && props.subtitle){
-      setTitleWidth(measureWidth(props.title, 'text title'));
-      setSubtitleWidth(measureWidth(props.subtitle, 'text subtitle'));
+      const measuredTitleWidth = measureWidth(props.title, 'text title');
+      const measuredSubtitleWidth = measureWidth(props.subtitle, 'text subtitle');
+      setTitleWidth(measuredTitleWidth);
+      setSubtitleWidth(measuredSubtitleWidth);
       
-      setstyleTitleLineWidth({ width: `calc(100% - ${titleWidth}px - 12%)` });
-      setstyleSubtitleLineWidth({ width: `calc(100% - ${subtitleWidth}px - 12%)` });
+      setstyleTitleLineWidth({ width: `calc(100% - ${measuredTitleWidth}px - 12%)` });
+      // Use the larger width to ensure bottom line never extends past the title lines
+      const maxWidth = Math.max(measuredTitleWidth, measuredSubtitleWidth);
+      setstyleSubtitleLineWidth({ width: `calc(100% - ${maxWidth}px - 12%)` });
     }
-  }, [props.title, props.subtitle, titleWidth, subtitleWidth]);
+  }, [props.title, props.subtitle]);
 
 
   /**
