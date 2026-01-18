@@ -7,10 +7,7 @@ import './styles.css';
  */
 export default function SectionHeader(props) {
 
-  // State hooks for title and subtitle width; since the right lines need to be calculated dynamically.
-  // Also includes hooks for styling the right lines just for cleanliness (calculations altogether).
-  const [titleWidth, setTitleWidth] = useState(0);
-  const [subtitleWidth, setSubtitleWidth] = useState(0);
+  // State hooks for styling the right lines dynamically based on text width.
   const [styleTitleLineWidth, setstyleTitleLineWidth] = useState({});
   const [styleSubtitleLineWidth, setstyleSubtitleLineWidth] = useState({});
 
@@ -42,8 +39,6 @@ export default function SectionHeader(props) {
     if (props.title && props.subtitle){
       const measuredTitleWidth = measureWidth(props.title, 'text title');
       const measuredSubtitleWidth = measureWidth(props.subtitle, 'text subtitle');
-      setTitleWidth(measuredTitleWidth);
-      setSubtitleWidth(measuredSubtitleWidth);
       
       setstyleTitleLineWidth({ width: `calc(100% - ${measuredTitleWidth}px - 12%)` });
       // Use the larger width to ensure bottom line never extends past the title lines
