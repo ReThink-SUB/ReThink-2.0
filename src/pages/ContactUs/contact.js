@@ -34,7 +34,7 @@ function ContactUsPage() {
 
   return (
     <>
-      <div className="header">
+      <div className="contact-section-header">
         <SectionHeader title="Contact Us" subtitle="We'd like to talk to you too! We'll be in touch soon." />
       </div>
       <div className="contact-box">

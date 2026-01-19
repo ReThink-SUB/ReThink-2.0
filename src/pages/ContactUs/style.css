@@ -1,21 +1,6 @@
-p{
-  font-family: Karma;
-  font-weight: 600;
-  font-style: SemiBold;
-  font-size: 18px;
-  line-height: 150%;
-  color: #3B2B23;
-
-}
-em{
-  color: #F56038;
-;
-  font-style: normal;
-  
-  
-}
-.header {
-  margin-top: 10vh;
+.contact-section-header {
+  padding-top: 80px;
+  width: 100%;
 }
 
 .contact-box {
