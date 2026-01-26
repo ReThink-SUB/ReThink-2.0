@@ -1,4 +1,4 @@
-import Home from '../pages/home/home';
+import Home from '../pages/Home/home';
 import About from '../pages/About/about';
 import Contact from '../pages/ContactUs/contact';
 // import Criteria from '../pages/criteria';
