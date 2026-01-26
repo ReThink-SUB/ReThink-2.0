@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { MapContainer, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
-import "./Home/styles.css";
+import "./home/styles.css";
 import { db } from "../firebase";
 import { collection, onSnapshot } from "firebase/firestore";
 import SectionHeader from "../components/SectionHeader/SectionHeader";
