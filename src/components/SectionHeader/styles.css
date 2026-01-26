@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@700&family=Karma:wght@600&display=swap');
 
-.line-container{
-  width: 100%; 
-  height: 100%; 
+.parent {
   position: relative;
+  width: 100%;
+}
+
+.line-container {
+  width: 100%; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
 }
 
 .leftline {
@@ -23,41 +30,46 @@
   position: absolute;
 }
 
-.top{
-  top: 0px; 
-  border: 1px #24520A solid
+.top {
+  top: -13px; 
+  border: 1px #24520A solid;
 }
 
 .mid {
-  top: 17px; 
-  border: 1px #4B607F solid
+  top: 8.375px; 
+  border: 1px #4B607F solid;
 }
 
 .bot {
   top: 29.75px; 
-  border: 1px #C2512F solid
+  border: 1px #C2512F solid;
+}
+
+.text-container {
+  position: relative;
+  z-index: 1;
 }
 
 .text {
   position: relative;
-  top: -12px;
   width: fit-content;
-  left: 11%
+  left: 11%;
 }
 
-.title {
+.text.title {
+  top: -5px;
   color: #000000;
-  font-size: 32px;
+  font-size: 36px;
   font-family: Averia Sans Libre;
   font-weight: 700;
-  line-height: 44.75px;
+  line-height: 4px;
   letter-spacing: 0.96px;
-  word-wrap: break-word
+  word-wrap: break-word;
 }
 
 .subtitle {
   color: #24520A;
-  font-size: 24px;
+  font-size: 20px;
   font-family: Karma;
   font-weight: 600;
   word-wrap: break-word;
@@ -68,14 +80,38 @@
   .subtitle {
     font-size: 18px;
   }
+
+  .top {
+    top: -13px;
+  }
+
+  .mid {
+    top: 7.5px;
+  }
+
+  .bot {
+    top: 28px;
+  }
 }
 
 @media (max-width: 500px) {
-  .title {
-    font-size: 28px
+  .text.title {
+    font-size: 28px;
   }
 
   .subtitle {
     font-size: 14px;
+  }
+
+  .top {
+    top: -11px;
+  }
+
+  .mid {
+    top: 6px;
+  }
+
+  .bot {
+    top: 22px;
   }
 }
