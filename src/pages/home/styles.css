@@ -128,230 +128,110 @@
   margin-bottom: 24px;
 }
 
-.search-container {
-  flex: 1;
-  margin-right: 30px;
-}
-
-.search-bar {
-  width: 100%;
-  padding: 10px 16px;
-  border: none;
-  border-radius: 6px;
-  background-color: #E9F3E7;
-  box-sizing: border-box;
-}
-
-.categories {
-  display: flex;
-  gap: 10px;
-}
-
-.category-btn {
-  padding: 8px 16px;
-  border-radius: 6px;
-  border: 1px solid #728F6E;
-  background-color: #FFFFF7;
-  color: #728F6E;
-  cursor: pointer;
-  font-family: 'Averia Sans Libre';
-}
-
-.category-btn.active {
-  background-color: #728F6E;
-  color: white;
-  border-color: #728F6E;
-  font-family: 'Averia Sans Libre';
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 24px;
-}
-
-.card {
-  background: white;
-  border: 1px solid #e88c6f;
-  border-radius: 6px;
-  padding: 16px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-.card-images {
-  display: flex;
-  gap: 16px;
-  margin-bottom: 12px;
-  height: 130px;
-  justify-content: center;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.bus-logo,
-.thumbnail {
-  width: 50%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 6px;
-  display: block;
-  margin-bottom: 0px;
-  padding: 0;
-}
-
-.business-name {
-  color: #e6533c;
-  font-weight: bold;
-  margin-bottom: 8px;
-  font-family: 'Karma-Bold';
-  font-size: 20px;
-}
-
-.description {
-  font-size: 14px;
-  color: #444;
-  line-height: 1.4;
-  font-family: 'Karma';
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 5;
-  line-clamp: 5;
-  -webkit-box-orient: vertical;
-}
-
-/* Responsive design */
-@media (max-width: 1024px) {
-  .banner-overlay-title {
-    font-size: 36px;
-  }
-
-  .banner-overlay-subtitle {
-    font-size: 18px;
-  }
-
-  .banner-overlay {
-    padding: 30px 40px;
-  }
-
-  .view-businesses-btn {
-    font-size: 14px;
-    padding: 10px 25px;
-  }
-}
-
-@media (max-width: 768px) {
-  .banner-image-section {
-    padding: 40px 0 20px 0;
-  }
-
-  .home-banner {
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-    height: 400px;
-  }
-
-  .banner-overlay {
-    left: 5%;
-    top: 40px;
-    width: calc(90% * 2 / 5);
-    height: 400px;
-    padding: 25px 30px;
-  }
-
-  .banner-overlay-title {
-    font-size: 28px;
-  }
-
-  .banner-overlay-subtitle {
-    font-size: 16px;
-  }
-
-  .view-businesses-btn {
-    font-size: 13px;
-    padding: 9px 20px;
-  }
-
-  .map-container {
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-    height: 60vh;
-  }
-
-  .business-content {
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-
-  .header {
-    flex-direction: column;
-    gap: 16px;
-  }
-
   .search-container {
+    flex: 1;
+    margin-right: 30px;
+  }
+  
+  .search-bar {
     width: 100%;
-    margin-right: 0;
+    padding: 10px 16px;
+    border: 1.5px #24520A solid;
+    border-radius: 40px;
+    background-color: #E9F3E7;
   }
 
+  .search-icon {
+    position: absolute;
+    margin-left: 18px;
+    margin-top: 16px;
+    color: #24520A;
+    font-size: 18px;
+    pointer-events: none;
+  }
+
+  .search-bar {
+    padding-left: 44px;
+  }
+
+  
   .categories {
-    flex-wrap: wrap;
-    justify-content: center;
+    display: flex;
+    gap: 10px;
   }
-}
-
-@media (max-width: 500px) {
-  .banner-image-section {
-    padding: 40px 0 20px 0;
+  
+  .category-btn {
+    padding: 8px 16px;
+    border-radius: 40px;
+    border: 1.5px solid #24520A;
+    background-color: #E9F3E7;
+    color: black;
+    cursor: pointer;
+    font-family: 'Averia Sans Libre';
   }
-
-  .home-banner {
-    width: 95%;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-    height: 350px;
+  
+  .category-btn.active {
+    background-color: #24520A;
+    color: white;
+    border-color: #24520A;
+    font-family: 'Averia Sans Libre';
   }
-
-  .banner-overlay {
-    left: 2.5%;
-    top: 40px;
-    width: calc(95% * 3 / 5);
-    height: 350px;
-    padding: 20px 25px;
-  }
-
-  .banner-overlay-title {
-    font-size: 24px;
-    margin-bottom: 15px;
-  }
-
-  .banner-overlay-subtitle {
-    font-size: 14px;
-  }
-
-  .view-businesses-btn {
-    font-size: 12px;
-    padding: 8px 18px;
-  }
-
-  .map-container {
-    width: 95%;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-    height: 50vh;
-  }
-
-  .business-content {
-    width: 95%;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-  }
-
+  
   .grid {
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
   }
-}
+  
+  .card {
+    background: white;
+    border: 1px solid #e88c6f;
+    border-radius: 6px;
+    padding: 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    max-width: 500px; 
+    margin: 0 auto;
+  }
+  
+  .card-images {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 12px;
+    height: 130px;
+    justify-content: center; 
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .bus-logo,
+  .thumbnail {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;  
+    border-radius: 6px;
+    display: block;
+    margin-bottom: 0px;
+    padding: 0;
+    background-color: none;
+  }
+  
+  
+  .business-name {
+    color: #e6533c;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-family: 'Karma-Bold';
+    font-size: 20px;
+  }
+  
+  .description {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.4;
+    font-family: 'Karma';
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+  }
+  
