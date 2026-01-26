@@ -2,11 +2,10 @@ import React, { useState, useEffect } from "react";
 import { MapContainer, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
-import "./home/styles.css";
-import { db } from "../firebase";
+import "./styles.css";
+import { db } from "../../firebase";
 import { collection, onSnapshot } from "firebase/firestore";
-import { RiSearchLine } from 'react-icons/ri';
-import SectionHeader from "../components/SectionHeader/SectionHeader";
+import SectionHeader from "../../components/SectionHeader/SectionHeader";
 
 function HomePage() {
   const seattleCenter = [47.6062, -122.3321];
@@ -50,7 +49,7 @@ function HomePage() {
 
       <div className="banner-image-section">
         <img 
-          src={require('../images/home/home_banner.png')} 
+          src={require('../../images/home/home_banner.png')} 
           alt="Home Banner" 
           className="home-banner"
         />
