@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./home/styles.css";
 import { db } from "../firebase";
 import { collection, onSnapshot } from "firebase/firestore";
+import { RiSearchLine } from 'react-icons/ri';
 
 function HomePage() {
   const [businesses, setBusinesses] = useState([]);
@@ -17,7 +18,6 @@ function HomePage() {
       });
       setBusinesses(items);
     });
-
     return () => unsubscribe();
   }, []);
 
@@ -40,14 +40,15 @@ function HomePage() {
     <div className="container">
       <div className="header">
         <div className="search-container">
-          <input
-            type="text"
-            placeholder="Search"
-            className="search-bar"
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-          />
-        </div>
+        <RiSearchLine className="search-icon" />
+        <input
+          placeholder=""
+          type="text"
+          className="search-bar"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+      </div>
         <div className="categories">
           <button
             className={`category-btn ${selectedCategory === "" ? "active" : ""}`}
