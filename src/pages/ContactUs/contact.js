@@ -39,7 +39,7 @@ function ContactUsPage() {
       </div>
       <div className="contact-box">
         <div className="box-top-left">
-          <p className="title">Let's Chat!</p>
+          <p className="chat-title">Let's Chat!</p>
           <form ref={form} onSubmit={sendEmail}>
             <label htmlFor="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Enter your name:" required />
