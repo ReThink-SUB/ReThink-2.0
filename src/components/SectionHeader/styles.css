@@ -57,23 +57,24 @@
 }
 
 .text.title {
-  top: -5px;
+  top: -17px;
   color: #000000;
   font-size: 36px;
   font-family: Averia Sans Libre;
   font-weight: 700;
-  line-height: 4px;
+  line-height: 28px;
   letter-spacing: 0.96px;
   word-wrap: break-word;
 }
 
 .subtitle {
+  top: -5px;
   color: #24520A;
   font-size: 20px;
   font-family: Karma;
   font-weight: 600;
   word-wrap: break-word;
-  max-width: 50% 
+  max-width: 50%;
 }
 
 @media (max-width: 768px) {
